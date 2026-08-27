@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="setupBox" class="main-box">
+            <div id="mode-select">
+                <div id="vocab-select">
+                    <p>Vocabulary</p>
+                </div>
+                <div id="ipa-select"> 
+                    <p>IPA</p>
+                </div>
+            </div>
+            <div id="difficulty">
+                <p id="difficulty-title">Difficulty</p>
+                <div id="difficulty-container">
+                    <div id="difficulty-selector">
+                        <div id="but-con" onclick="slide()">
+                            <div id="slider"></div>
+                            <div id="opt-wrapper">
+                                <p class="but-opts" id="presets">Presets</p>
+                                <p class="but-opts" id="custom">Custom</p>
+                            </div>
+                        </div>
+                        <div id="difficulty-preset-buttons">
+                            <label for="easy">
+                                <div id="preset-easy" class="preset-button">
+                                    <input id="easy" type="radio" name="diff" onclick="difficultyOptions('easy')">
+                                    <P class="difficulty-button-text">Easy</P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"><path d="m296-345-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg>
+                                </div>
+                            </label>
+                            <label for="medium">
+                                <div id="preset-medium" class="preset-button">
+                                    <input id="medium" type="radio" name="diff" checked onclick="difficultyOptions('medium')">
+                                    <P class="difficulty-button-text">Medium</P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#"><path d="m282-225-42-42 240-240 240 240-42 42-198-198-198 198Zm0-253-42-42 240-240 240 240-42 42-198-198-198 198Z"/></svg>
+                                </div>
+                            </label>
+                            <label for="hard">
+                                <div id="preset-hard" class="preset-button">
+                                    <input id="hard" type="radio" name="diff" onclick="difficultyOptions('hard')">
+                                    <P class="difficulty-button-text">Hard</P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#"><path d="m282-107-42-42 240-240 240 240-42 42-198-198-198 198Zm0-246-42-42 240-240 240 240-42 42-198-198-198 198Zm0-246-42-42 240-240 240 240-42 42-198-198-198 198Z"/></svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="difficulty-display">
+                        <div><p id="timeDifficultyDisplay">Time: 00</p></div>
+                        <div><p id="roundsDifficultyDisplay">Rounds: 00</p></div>
+                        <div><p id="contentDifficulty-display">words: all</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="diff-but-con">
+                <button id="resetButton" class="difficulty-buttons">RESET</button>
+                <button id="startButton" class="difficulty-buttons" onclick="startGame()">START</button>
+            </div>
+        </div>
+        <div id="gameBox" class="main-box">
+            <div class="top-wrapper">
+                <p id="scoreDisplay"></p>
+                <p id="timeDisplay"></p>
+            </div>
+            <div id="game-con">
+                <div class="word-wrapper">
+                    <div class="NoL-container">
+                        <label for="input" id="NoLTypedDisplay">0</label>
+                        <label for="input" id="NoLTotalDisplay">/0</label>
+                    </div>
+                    <input id="input" autocomplete="false" spellcheck="false">
+                </div>
+                <div id="info-box">
+                    <div id="info-wrapper">
+                        <div class="info-containers">
+                            <p class="info-title">Definition:</p>
+                            <p id="definition"></p>
+                        </div>
+                        <div class="info-containers">
+                            <p class="info-title">Synonyms:</p>
+                            <ul id="synonyms">
+                                <li id="synonym1"></li>
+                                <li id="synonym2"></li>
+                                <li id="synonym3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="afterAnswer-info">
+                        <div id="ipaCon">
+                            <button id="ipa-help">?</button>
+                            <p>IPA:</p>
+                            <p id="ipa"></p>
+                        </div>
+                        <div id="answer-con">
+                            <p id="answer"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button onclick="variables('home')" id="homeButton">HOME</button>
+                    <button onclick="hintButtonLogic()" id="hintButton">HINT</button>
+                    <button onclick="mainButtonLogic()" id="mainButton">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>

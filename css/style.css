@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif";
+  font-weight: 500;
+  user-select: none;
+}
+
+body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#gameBox {
+  display: none;
+}
+
+.top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E6F9E6;
+  border-radius: 24px 24px 0 0;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #1c2921;
+  padding: 0 22px;
+}
+.top-wrapper p {
+  font: 700 36px "Libre Baskerville";
+  color: #1c2921;
+}
+
+#game-con {
+  padding: 32px;
+}
+
+.word-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 8px;
+  height: 84px;
+  padding-left: 16px;
+  background-color: #d7f4d7;
+  margin-bottom: 32px;
+}
+.word-wrapper .NoL-container {
+  border-radius: 0 8px 8px 0;
+  height: 84px;
+  width: 132px;
+  background-color: #1c2921;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.word-wrapper .NoL-container label {
+  color: #E6F9E6;
+  font: 700 43px "Libre Baskerville";
+}
+.word-wrapper #input {
+  border: none;
+  overflow: auto;
+  font: 700 38px "Libre Baskerville";
+  background: none;
+  outline: none;
+  width: 100%;
+  font-variant-ligatures: none;
+}
+
+#info-box {
+  background-color: #1c2921;
+  border-radius: 8px 8px 16px 16px;
+  width: 554px;
+  height: 256px;
+}
+
+#info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-containers {
+  background-color: #E6F9E6;
+  height: 175px;
+  width: 253px;
+  border-radius: 8px;
+  margin: 16px 8px;
+  padding: 6px 10px;
+}
+
+.info-title {
+  font: 700 23px "Libre Baskerville";
+  color: #1c2921;
+  text-decoration: underline;
+}
+
+#definition {
+  font: 700 16px "Libre Baskerville";
+  margin-top: 6px;
+  color: #1c2921;
+}
+
+#synonyms {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+#synonyms li {
+  margin: 4px;
+  color: #1c2921;
+  font: 700 24px "Libre Baskerville";
+}
+
+#afterAnswer-info {
+  background-color: #E6F9E6;
+  height: 49px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+#afterAnswer-info p {
+  font: 700 18px "Libre Baskerville";
+  color: #1c2921;
+}
+
+#ipaCon {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+#ipaCon button {
+  margin-right: 12px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1c2921;
+  color: #d7f4d7;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#ipaCon button:hover {
+  background-color: #27392E;
+}
+#ipaCon #ipa {
+  margin-left: 6px;
+}
+
+#answer-con {
+  display: flex;
+  gap: 6px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 21px;
+  margin-top: 28px;
+}
+.button-wrapper button {
+  width: 169px;
+  height: 68px;
+  box-shadow: 3px 3px 1px 2px black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all ease 75ms;
+}
+.button-wrapper button:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+.button-wrapper #homeButton {
+  background-color: #1c2921;
+  color: #E6F9E6;
+  font: 700 31px "Libre Baskerville";
+}
+.button-wrapper #homeButton:hover {
+  background-color: #27392E;
+}
+.button-wrapper #hintButton {
+  background-color: #617A63;
+  color: #F7FFF7;
+  font: 700 31px "Libre Baskerville";
+}
+.button-wrapper #hintButton:hover {
+  background-color: #6A896E;
+}
+.button-wrapper #mainButton {
+  background-color: #d7f4d7;
+  color: #1c2921;
+  font: 700 31px "Libre Baskerville";
+}
+.button-wrapper #mainButton:hover {
+  background-color: #E6F9E6;
+}
+
+.main-box {
+  background-color: white;
+  width: 616px;
+  height: 616px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #1c2921;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2509803922);
+}
+
+#mode-select {
+  width: 100%;
+  display: flex;
+}
+#mode-select div {
+  width: 50%;
+  font-size: 40pt;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 2px solid #1c2921;
+}
+#mode-select div p {
+  font: 700 36px "Libre Baskerville";
+}
+#mode-select #vocab-select {
+  background-color: #1c2921;
+  color: #E6F9E6;
+  border-top-left-radius: 20px;
+  border-right: 1px solid #1c2921;
+}
+#mode-select #ipa-select {
+  background-color: #d7f4d7;
+  color: #1c2921;
+  border-top-right-radius: 20px;
+  border-left: 1px solid #1c2921;
+}
+
+#difficulty {
+  padding: 16px 32px;
+}
+#difficulty #difficulty-title {
+  margin-bottom: 16px;
+  font: 700 36px "Libre Baskerville";
+  font-variant-ligatures: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #1c2921;
+}
+
+#difficulty-container {
+  background-color: #d7f4d7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  height: 320px;
+}
+
+#difficulty-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#but-con {
+  background-color: #1c2921;
+  width: 396px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-radius: 13px;
+  cursor: pointer;
+}
+#but-con #slider {
+  width: calc(50% - 10px);
+  height: 32px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #F7FFF7;
+  transition: all ease-in-out 100ms;
+}
+#but-con #opt-wrapper {
+  width: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 92px;
+  width: 396px;
+}
+#but-con .but-opts {
+  font: 500 27px "Libre Baskerville";
+  transition: all ease-in-out 100ms;
+}
+#but-con #custom {
+  color: #E6F9E6;
+}
+#but-con #presets {
+  color: #1c2921;
+}
+
+#difficulty-preset-buttons {
+  display: flex;
+  width: 397px;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+#difficulty-preset-buttons label div:has(input:checked) {
+  background-color: #1c2921;
+  color: #E6F9E6;
+  cursor: default;
+}
+#difficulty-preset-buttons label div:has(input:checked) svg {
+  fill: #E6F9E6;
+}
+#difficulty-preset-buttons .preset-button {
+  border-radius: 8px;
+  background-color: #F7FFF7;
+  width: 111px;
+  height: 111px;
+  cursor: pointer;
+  transition: all ease 100ms;
+  color: #1c2921;
+  font: 500 27px "Libre Baskerville";
+  text-align: center;
+  border: 2px solid transparent;
+}
+#difficulty-preset-buttons .preset-button .difficulty-button-text {
+  margin-top: -25px;
+}
+#difficulty-preset-buttons .preset-button svg {
+  fill: #1c2921;
+}
+#difficulty-preset-buttons .preset-button:hover {
+  border: 2px solid #1c2921;
+}
+#difficulty-preset-buttons .preset-button input {
+  opacity: 0;
+}
+
+#difficulty-display {
+  background-color: #E6F9E6;
+  width: 100%;
+  height: 72px;
+  border-radius: 0 0 8px 8px;
+  padding: 8px;
+  display: flex;
+  gap: 16px;
+}
+#difficulty-display div {
+  background-color: #d7f4d7;
+  width: 166px;
+  height: 54px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#difficulty-display div p {
+  color: #1c2921;
+  font: 700 18px "Libre Baskerville";
+}
+
+#diff-but-con {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.difficulty-buttons {
+  width: 264px;
+  height: 68px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 3px 1px 2px black;
+  font: 700 44px "Libre Baskerville";
+  transition: all ease 75ms;
+  cursor: pointer;
+}
+.difficulty-buttons:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+#resetButton {
+  background-color: #1c2921;
+  color: #d7f4d7;
+}
+#resetButton:hover {
+  background-color: #27392E;
+}
+
+#startButton {
+  background-color: #d7f4d7;
+  color: #1c2921;
+}
+#startButton:hover {
+  background-color: #E6F9E6;
+}
