@@ -32,7 +32,7 @@
   {
     "word": "Beholden",
     "definition": "Indebted; obliged; under a moral obligation.",
-    "synonyms": ["Grateful", "Obligated", "Obliged"],
+    "synonyms": ["Grateful", "Obligated", "Bound"],
     "ipa": "bɪˈhoʊldən"
   },
   {
@@ -148,7 +148,7 @@
     "definition": "In a persistent or tenacious manner.",
     "synonyms": ["Adamantly", "Persistently", "Stubbornly"],
     "ipa": "ˈdɔɡɪdli"
-  },  
+  },
   {
     "word": "Brevity",
     "definition": "Conciseness of expression; lack of verbosity.",
@@ -174,57 +174,255 @@
     "ipa": "ˈæf əˌrɪz əm"
   },
   {
-    "word": "Aphorism",
-    "definition": "A short pithy saying expressing a general truth.",
-    "synonyms": ["Adage", "Maxim", "Proverb"],
-    "ipa": "ˈæf əˌrɪz əm"
-  },
-  {
-    "word": "bemused",
+    "word": "Bemused",
     "definition": "Preoccupied; lost in thought.",
-    "synonyms": ["distracted", "engrossed", "preoccupied"],
+    "synonyms": ["Distracted", "Engrossed", "Preoccupied"],
     "ipa": "ˈbɪˈmjuːzd"
   },
   {
-    "word": "assiduous",
+    "word": "Assiduous",
     "definition": "Constant in application or effort; working diligently at a task.",
-    "synonyms": ["persevering, industrious, meticulous"],
+    "synonyms": ["Persevering", "Industrious", "Meticulous"],
     "ipa": "əˈsɪdjʊəs"
   },
   {
-    "word": "avarice",
+    "word": "Avarice",
     "definition": "Extreme greed for riches.",
-    "synonyms": ["greediness, cupidity, avidity"],
+    "synonyms": ["Greediness", "Cupidity", "Avidity"],
     "ipa": "ˈævərɪs"
   },
   {
-    "word": "cupidity",
+    "word": "Cupidity",
     "definition": "Eager or excessive desire, especially to possess something.",
-    "synonyms": ["acquisitiveness, craving, yearning"],
+    "synonyms": ["Acquisitiveness", "Craving", "Yearning"],
     "ipa": "kjuːˈpɪdɪtɪ"
   },
   {
-    "word": "pensive",
+    "word": "Pensive",
     "definition": "Deeply or seriously thoughtful, often with a tinge of sadness.",
-    "synonyms": ["contemplative, thoughtful, reflecting"],
+    "synonyms": ["Contemplative", "Thoughtful", "Reflecting"],
     "ipa": "ˈpɛnsɪv"
   },
   {
-    "word": "precipitate",
+    "word": "Precipitate",
     "definition": "To hasten the occurrence of; bring about prematurely, hastily, or suddenly.",
-    "synonyms": ["accelerate, expedite, trigger"],
+    "synonyms": ["Accelerate", "Expedite", "Trigger"],
     "ipa": "prɪˈsɪp ɪˌteɪt"
   },
   {
-    "word": "contempt",
+    "word": "Contempt",
     "definition": "The feeling with which a person regards anything considered mean, vile, or worthless.",
-    "synonyms": ["condescension, disdain, scorn"],
-    "ipa": "ənˈtɛmpt "
+    "synonyms": ["Condescension", "Disdain", "Scorn"],
+    "ipa": "ənˈtɛmpt"
   },
   {
-    "word": "indemnity",
+    "word": "Indemnity",
     "definition": "Compensation for loss or damage.",
-    "synonyms": ["compensation, repayment, restitution"],
-    "ipa": "ɪnˈdɛmnɪtɪ "
+    "synonyms": ["Compensation", "Repayment", "Restitution"],
+    "ipa": "ɪnˈdɛmnɪtɪ"
+  },
+  {
+    "word": "Fastidious",
+    "definition": "Very critical; excessively particular about details.",
+    "synonyms": ["Choosy", "Finicky", "Fussy"],
+    "ipa": "fæˈstɪdɪəs"
+  },
+  {
+    "word": "Emaciated",
+    "definition": "Abnormally thin.",
+    "synonyms": ["Bony", "Guant", "Skinny"],
+    "ipa": "ɪˈmeɪsɪˌeɪtɪd"
+  },
+  {
+    "word": "Assuaged",
+    "definition": "Made milder or less severe.",
+    "synonyms": ["Soothed", "Relieved", "Eased"],
+    "ipa": "əˈsweɪʒd"
+  },
+  {
+    "word": "Rapacious",
+    "definition": "Given to seizing for plunder or the satisfaction of greed.",
+    "synonyms": ["Ferocious", "Greedy", "Marauding"],
+    "ipa": "rəˈpeɪʃəs"
+  },
+  {
+    "word": "Erudition",
+    "definition": "Knowledge acquired by study, research, etc.",
+    "synonyms": ["Refinement", "Learning", "Bookishness"],
+    "ipa": "ˌɛr jʊˈdɪʃ ən"
+  },
+  {
+    "word": "Propitious",
+    "definition": "Full of promise; good, favorable.",
+    "synonyms": ["Advantageous", "Auspicious", "Opportune"],
+    "ipa": "prəˈpɪʃəs"
+  },
+  {
+    "word": "Auspicious",
+    "definition": "Full of promise; good, favorable.",
+    "synonyms": ["Advantageous", "Auspicious", "Opportune"],
+    "ipa": "ɔːˈspɪʃəs"
+  },
+  {
+    "word": "Gallimaufry",
+    "definition": "A jumble; hotchpotch.",
+    "synonyms": ["Jumple", "Mishmash", "Conglomeration"],
+    "ipa": "ˌɡælɪˈmɔːfrɪ"
+  },
+  {
+    "word": "Malodorous",
+    "definition": "Having an unpleasant or offensive odor; smelling bad.",
+    "synonyms": ["Smelly", "Nasty", "Rancid"],
+    "ipa": "ˌɡælɪˈmɔːfrɪ"
+  },
+  {
+    "word": "Castigate",
+    "definition": "To criticize or reprimand severely.",
+    "synonyms": ["Berate", "Criticize", "Chastise"],
+    "ipa": "ˈkæstɪˌɡeɪt"
+  },
+  {
+    "word": "Debonair",
+    "definition": "Courteous, and having a sophisticated charm.",
+    "synonyms": ["Gracious", "Affable", "Dashing"],
+    "ipa": "ˌdɛbəˈnɛə"
+  },
+  {
+    "word": "Benediction",
+    "definition": "An invocation of divine blessing, esp at the end of a Christian religious ceremony.",
+    "synonyms": ["Invocation", "Blessing", "Praise"],
+    "ipa": "ˌbɛnɪˈdɪkʃən"
+  },
+  {
+    "word": "Affable",
+    "definition": "Showing warmth and friendliness.",
+    "synonyms": ["Approachable", "Courteous", "Sociable"],
+    "ipa": "ˈæfəbəl"
+  },
+  {
+    "word": "Facile",
+    "definition": "Easy to perform or achieve.",
+    "synonyms": ["Effortless", "Hasty", "Easy"],
+    "ipa": "ˈfæsaɪl"
+  },
+  {
+    "word": "Vestige",
+    "definition": "A mark, trace, or visible evidence of something that is no longer present or in existence.",
+    "synonyms": ["Relic", "Remnant", "Residue"],
+    "ipa": "ˈvɛstɪdʒ"
+  },
+  {
+    "word": "Indignation",
+    "definition": "Strong displeasure at something considered unjust, offensive, insulting.",
+    "synonyms": ["Exasperation", "Fury", "Resentment"],
+    "ipa": "ˌɪndɪɡˈneɪʃən"
+  },
+  {
+    "word": "Epithet",
+    "definition": "A descriptive word or phrase added to or substituted for a person's name.",
+    "synonyms": ["Appellation", "Description", "Title"],
+    "ipa": "ˈɛpɪˌθɛt"
+  },
+  {
+    "word": "Gelid",
+    "definition": "Very cold, icy, or frosty.",
+    "synonyms": ["Chilly", "Cold", "Frozen"],
+    "ipa": "ˈdʒɛlɪd"
+  },
+  {
+    "word": "Effervescent",
+    "definition": "A liquid giving off bubbles of gas.",
+    "synonyms": ["Sparkling", "Bubbly", "Frothy"],
+    "ipa": "ˌɛfəˈvɛsənt"
+  },
+  {
+    "word": "Catatonic",
+    "definition": "Appearing to be in a daze or stupor; unresponsive.",
+    "synonyms": ["Comatose", "Unconscious", "Confused"],
+    "ipa": "ˌkæt əˈtɒn ɪk"
+  },
+  {
+    "word": "Stupor",
+    "definition": "Suspension or great diminution of the senses, as in disease or as caused by narcotics, intoxicants, etc.",
+    "synonyms": ["Coma", "Slumber", "Trance"],
+    "ipa": "ˈstjuːpə"
+  },
+  {
+    "word": "Facetious",
+    "definition": "Not meant to be taken seriously or literally.",
+    "synonyms": ["Amusing", "Comical", "Humorous"],
+    "ipa": "fəˈsiːʃəs"
+  },
+  {
+    "word": "Anhedonia",
+    "definition": "Lack of pleasure or of the capacity to experience it.",
+    "synonyms": ["Grief", "Misery", "Sadness"],
+    "ipa": "ˌænhiˈdoʊniə"
+  },
+  {
+    "word": "Forlorn",
+    "definition": "Desolate or dreary; unhappy or miserable, as in feeling, condition, or appearance.",
+    "synonyms": ["Depressed", "Despondent", "Miserable"],
+    "ipa": "fəˈlɔːn"
+  },
+  {
+    "word": "Curmudgeon",
+    "definition": "A bad-tempered, difficult, cantankerous person.",
+    "synonyms": ["Complainer", "Faultfinder", "Grump"],
+    "ipa": "kɜːˈmʌdʒən"
+  },
+  {
+    "word": "Palisade",
+    "definition": "A strong fence made of stakes driven into the ground, esp for defence.",
+    "synonyms": ["Barrier", "Defense", "Stockade"],
+    "ipa": "ˌpælɪˈseɪd"
+  },
+  {
+    "word": "Monomania",
+    "definition": "An excessive mental preoccupation with one thing, idea, etc",
+    "synonyms": ["Enthusiasm", "Passion", "Infatuation"],
+    "ipa": "ˌmɒnəʊˈmeɪnɪə"
+  },
+  {
+    "word": "Inoculation",
+    "definition": "The introduction of a serum, a vaccine, or an antigenic substance into the body.",
+    "synonyms": ["Injection", "Shot", "Vaccination"],
+    "ipa": "ɪˌnɒkjəˈleɪʃən"
+  },
+  {
+    "word": "Ephemeral",
+    "definition": "Lasting for only a short time.",
+    "synonyms": ["Fleeting", "Short-lived", "Transitory"],
+    "ipa": "ɪˈfɛmərəl"
+  },
+  {
+    "word": "Irascible",
+    "definition": "Easily provoked to anger; very irritable.",
+    "synonyms": ["Cantankerous", "Cranky", "Feisty"],
+    "ipa": "ɪˈræsɪbəl"
+  },
+  {
+    "word": "vehemently",
+    "definition": "In a strongly emotional or zealous manner.",
+    "synonyms": ["Frantically", "Boldly", "Passionately"],
+    "ipa": "ˈviːɪməntli"
+  },
+  {
+    "word": "taciturn",
+    "definition": "Inclined to silence; reserved in speech.",
+    "synonyms": ["Mute", "Quiet", "Reserved"],
+    "ipa": "ˈtæsɪˌtɜːn"
+  },
+  {
+    "word": "Erudite",
+    "definition": "Having or showing extensive scholarship.",
+    "synonyms": ["Knowledgeable", "Intelligent", "Scholarly"],
+    "ipa": "ˈɛrʊˌdaɪt"
+  },
+  {
+    "word": "Diurnal",
+    "definition": "Happening during the day or daily.",
+    "synonyms": ["Day-to-day", "Routine", "Everyday"],
+    "ipa": "daɪˈɜːnəl"
   }
 ]
